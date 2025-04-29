@@ -1,0 +1,294 @@
+Creacion de Usuario
+
+se crea usuario fer.gab.sua@gmail.com
+se crea restaurante 'el tano'  "_id": "d5625afe-2e5d-45f4-ab52-982a79daf173", 
+se hace un patch del usuario fer.gab.sua@gmail.com id : dc328290-267d-4fc0-9ff6-c33a0def19a1 con restaurant_id d5625afe-2e5d-45f4-ab52-982a79daf173
+respuesta>
+{
+  "status_code": 200,
+  "data": {
+    "_id": "2faefca0-da25-4228-af43-bf4112ecf494",
+    "created_at": "2024-12-21T22:38:08.991585Z",
+    "updated_at": "2024-12-21T22:38:08.991585Z",
+    "is_deleted": false,
+    "first_name": "Fernando",
+    "last_name": "Suarez",
+    "email": "fer.gab.sua@gmail.com",
+    "password": "********",
+    "rol": "string",
+    "restaurantes": "d5625afe-2e5d-45f4-ab52-982a79daf173"
+  },
+  "errors": [],
+  "request_id": "44da5e31-165c-4d12-a315-dcbc8a75b125"
+}
+
+#########################################################################
+Creo 3 empleados -> Coco, Pedro y Luisa
+#########################################################################
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "55dc7bfd-44a7-4e23-8e25-33a27f976df5",
+    "created_at": "2024-12-24T00:53:19.830583Z",
+    "updated_at": "2024-12-24T00:53:19.830583Z",
+    "is_deleted": false,
+    "identifier": 1,
+    "name": "Coco",
+    "role": "Mozo",
+    "comments": "string",
+    "phone": "123456789",
+    "address": "Av. siempre viva 123",
+    "email": "coco@example.com",
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173",
+    "emergency_contact": 0,
+    "work_schedule": "string",
+    "assigned_tables": []
+  },
+  "errors": [],
+  "request_id": "c7929529-a194-4a8b-b82f-b56b0a884e11"
+}
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "92f31907-96a0-4193-8cca-38631ddd54f0",
+    "created_at": "2024-12-24T00:55:05.215172Z",
+    "updated_at": "2024-12-24T00:55:05.215172Z",
+    "is_deleted": false,
+    "identifier": 2,
+    "name": "Pedro",
+    "role": "Mozo",
+    "comments": "string",
+    "phone": "123456780",
+    "address": "Av. siempre viva 124",
+    "email": "coco@example.com",
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173",
+    "emergency_contact": 0,
+    "work_schedule": "string",
+    "assigned_tables": []
+  },
+  "errors": [],
+  "request_id": "2e3621ce-892f-4269-80c0-1b42ba0b6e88"
+}
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "6ad97180-d243-4137-b048-5aadc57f22d2",
+    "created_at": "2024-12-24T00:58:29.851559Z",
+    "updated_at": "2024-12-24T00:58:29.851559Z",
+    "is_deleted": false,
+    "identifier": 3,
+    "name": "Luisa",
+    "role": "Caja",
+    "comments": "string",
+    "phone": "123456780",
+    "address": "Av. siempre viva 124",
+    "email": "coco@example.com",
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173",
+    "emergency_contact": 0,
+    "work_schedule": "string",
+    "assigned_tables": []
+  },
+  "errors": [],
+  "request_id": "4debaea7-00a4-4199-ac84-565ae19003d1"
+}
+
+#########################################################################
+Creo 3 empleados -> Coco, Pedro y Luisa
+#########################################################################
+creo 1000 ingredientes con el id de restorant automatico.  
+#########################################################################
+
+#########################################################################
+creo una categoria de menu
+#########################################################################
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "46eea73d-6616-4178-8c3b-f9c16cc2b147",
+    "created_at": "2024-12-24T03:28:05.501266Z",
+    "updated_at": "2024-12-24T03:28:05.501266Z",
+    "is_deleted": false,
+    "name": "Pizzas",
+    "description": "string",
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173"
+  },
+  "errors": [],
+  "request_id": "28946af2-288d-4ebc-9d22-aa0669228fb5"
+}
+
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "ef32fa4a-9a32-4699-85b9-c3d7c1b40772",
+    "created_at": "2024-12-24T14:34:20.033204Z",
+    "updated_at": "2024-12-24T14:34:20.033204Z",
+    "is_deleted": false,
+    "name": "Pastas",
+    "description": "Pastas",
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173"
+  },
+  "errors": [],
+  "request_id": "247bfd03-1536-472e-8b46-6ddb315099e6"
+}
+
+#########################################################################
+creo el articulo final Pizza
+#########################################################################
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "7f77600c-d8ce-4daf-8208-2ff1a54978ca",
+    "created_at": "2024-12-24T03:31:24.569775Z",
+    "updated_at": "2024-12-24T03:31:24.569775Z",
+    "is_deleted": false,
+    "category_id": "46eea73d-6616-4178-8c3b-f9c16cc2b147",
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173",
+    "kitchen": "Pizza",
+    "name": "Pizza de la casa",
+    "description": "pizza con queso lalala ",
+    "price": 15,
+    "is_prepared": true,
+    "options": [],
+    "components": [],
+    "ingredients": [
+      {
+        "id": "25da6533-e872-4727-a4aa-008c88ed5b6f",
+        "unidad": "gr",
+        "cantidad": 150
+      },
+      {
+        "id": "e5d0c044-b1e0-41a5-868d-ec76e1401840",
+        "unidad": "gr",
+        "cantidad": 10
+      },
+      {
+        "id": "280b5fcc-f23e-42dc-b331-3db9f0a93b07",
+        "unidad": "gr",
+        "cantidad": 250
+      }
+    ],
+    "stock_controled": true
+  },
+  "errors": [],
+  "request_id": "76d834f1-2d43-4b14-b4d8-72b33c2b63c0"
+}
+
+
+
+25da6533-e872-4727-a4aa-008c88ed5b6f harina
+8b219ac0-3c8c-4d86-aed5-5ad72b12dbb7 huevos
+#########################################################################
+creo el menu general
+#########################################################################
+
+{
+  "status_code": 201,
+  "data": {
+    "_id": "ce303df6-def9-4129-a106-d0ea425b0341",
+    "created_at": "2024-12-24T12:14:07.083501Z",
+    "updated_at": "2024-12-24T12:14:07.083501Z",
+    "is_deleted": false,
+    "restaurant_id": "d5625afe-2e5d-45f4-ab52-982a79daf173",
+    "name": "Menu General",
+    "description": "Menu general diario en condiciones normales",
+    "final_articles": [
+      "7f77600c-d8ce-4daf-8208-2ff1a54978ca"
+    ],
+    "daily_menu": []
+  },
+  "errors": [],
+  "request_id": "d262d432-41f1-4a8e-b65f-08f0a0806fba"
+}
+
+#########################################################################
+#########################################################################
+#########################################################################
+
+creo el daily menu
+#########################################################################
+
+
+{
+  "category_id": "9a639911-82b1-4565-9811-df1305eafc30",
+    "kitchen": "Italian",
+    "name": "Spaghetti Bolognese",
+    "description": "Classic Italian pasta dish made with ground beef ragù and served with spaghetti.",
+    "price": 15.99,
+    "is_prepared": false,
+    "options": [],
+       "components": [],
+         "ingredients": [
+      {
+        "id": "aa12bf44-aeb9-4f7f-b6ea-ebe37b9ff1e4",
+        "unidad": "gr",
+        "cantidad": 500
+      },
+      {
+        "id": "883891de-edd9-4f94-867f-9834c9977029",
+        "unidad": "ml",
+        "cantidad": 250
+      },
+      {
+        "id": "5d07bc39-978a-4a25-a741-4fd4233f5f9f",
+        "unidad": "gr",
+        "cantidad": 300
+      },
+      {
+        "id": "74bb286b-2710-4d16-842a-f16e4a5caf94",
+        "unidad": "gr",
+        "cantidad": 400
+      },
+      {
+        "id": "fa6f728e-f947-4073-b6bf-eeb137c2643a",
+        "unidad": "gr",
+        "cantidad": 150
+      },
+      {
+        "id": "9f05d71f-c6cd-4c6d-9537-811a1a2c9a52",
+        "unidad": "gr",
+        "cantidad": 200
+      },
+      {
+        "id": "e4981d24-67b8-4609-a33e-72f3e45b23dc",
+        "unidad": "gr",
+        "cantidad": 100
+      },
+      {
+        "id": "bda14ccd-e157-48a1-82aa-a60c28c5ba73",
+        "unidad": "gr",
+        "cantidad": 200
+      },
+      {
+        "id": "bda14ccd-e157-48a1-82aa-a60c28c5ba73",
+        "unidad": "gr",
+        "cantidad": 100
+      },
+      {
+        "id": "1569ca73-5c99-491f-b133-faa325286855",
+        "unidad": "gr",
+        "cantidad": 100
+      },
+      {
+        "id": "47887927-cf32-4c6f-a277-a5820e3cad69",
+        "unidad": "unidad",
+        "cantidad": 6
+      },
+      {
+        "id": "f2c54a08-7e91-4bc5-ae10-d188ee2ad694",
+        "unidad": "ml",
+        "cantidad": 100
+      },
+      {
+        "id": "914ff98b-84df-4fc4-8938-008f3b00046b",
+        "unidad": "gr",
+        "cantidad": 200
+      }
+    ],
+    "stock_controled": true
+  }
